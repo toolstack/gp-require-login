@@ -20,7 +20,7 @@ class GP_Require_Login {
 	
 	public function gp_router_http_methods( $methods ) {
 		if( ! is_user_logged_in() ) {
-			wp_redirect( wp_login_url( $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ) );
+			wp_redirect( wp_login_url( '//' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ) );
 			exit;
 		}
 		
