@@ -3,7 +3,7 @@
  * Plugin Name: GP Require Login
  * Plugin URI: http://glot-o-matic.com/gp-require-login
  * Description: Redirect non-logged in users to the login page.
- * Version: 0.5
+ * Version: 0.6
  * Author: GregRoss
  * Author URI: http://toolstack.com
  * Tags: glotpress, glotpress plugin, translate
