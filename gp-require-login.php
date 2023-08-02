@@ -1,11 +1,12 @@
 <?php
 /*
  * Plugin Name: GP Require Login
- * Plugin URI: http://glot-o-matic.com/gp-require-login
+ * Plugin URI: https://glot-o-matic.com/gp-require-login
  * Description: Redirect non-logged in users to the login page.
  * Version: 0.6
  * Author: GregRoss
- * Author URI: http://toolstack.com
+ * Author URI: https://toolstack.com/
+ * Text Domain: gp-require-login
  * Tags: glotpress, glotpress plugin, translate
  * License: GPLv2 or later
  */
@@ -25,6 +26,10 @@ class GP_Require_Login {
 		}
 		
 		return $methods;
+	}
+	
+	public function load_text_domain() {
+		load_plugin_textdomain( gp-require-login, false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 	}
 	
 	private function get_current_page_url() {
